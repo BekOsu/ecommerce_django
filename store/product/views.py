@@ -3,9 +3,12 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'product/index.html')
-
+    x={'product':'car',
+       'price':'45'}
+    
+    return render(request, 'product/index.html', x)
 
 def cart(request):
-    pass
- 
+   
+    
+    return render(request, 'product/cart.html')
