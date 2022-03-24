@@ -1,5 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the product index.")
+    return render(request, 'product/index.html')
+
+
+def cart(request):
+    pass
+ 
