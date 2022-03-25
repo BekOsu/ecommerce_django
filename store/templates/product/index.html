@@ -4,7 +4,13 @@
 
 {% block content %}
 
+{% for x in pro %}
 
-<h1>pro ff</h1>
+<h1>{{x.name}}<h1>
+<h1>{{x.code}}<h1>
+<h1>{{x.price}}<h1>
+
+
+{% endfor %}
 
 {% endblock content %}
