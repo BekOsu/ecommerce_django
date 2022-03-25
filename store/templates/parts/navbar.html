@@ -1,9 +1,14 @@
-<nav>
+{% comment %} <nav>
     <a href="/html/">HTML</a> |
     <a href="/css/">CSS</a> |
     <a href="/js/">JavaScript</a> |
     <a href="/python/">Python</a>
   </nav>
 
-  <h1>navbar <h1>
+  <h1>navbar <h1> {% endcomment %}
+
+    <span> <a href="{% url 'product' %}">product</a> </span> 
+    <span> <a href="{% url 'cart' %}">cart</a> </span> 
+    
+
     ##############################################
