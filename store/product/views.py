@@ -4,8 +4,8 @@ from .models import Product
  
 
 def index(request):
-    
-    return render(request, 'product/index.html', {'pro':Product.objects.all()})
+    x = {'pro':Product.objects.all()}
+    return render(request, 'product/index.html', x)
 
 def cart(request): 
     return render(request, 'product/cart.html')
