@@ -5,8 +5,7 @@ from .forms import Loginform
  
 def about(request):
     
-   dataform = Loginform(request.POST)
-   dataform.save()
+   dataform = Loginform(request.POST).save()
     
    return render(request, 'about/about.html', {'lf':Loginform})
 
