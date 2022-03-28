@@ -4,8 +4,12 @@ from .forms import Loginform
 
  
 def about(request):
-    
-   dataform = Loginform(request.POST).save()
+   if request.method == 'POST':
+
+      dataform = Loginform(request.POST)
+      
+      if dataform.is_valid():
+          dataform.save()   
     
    return render(request, 'about/about.html', {'lf':Loginform})
 
