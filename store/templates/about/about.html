@@ -5,12 +5,19 @@
 
 <form method="POST">
     {% csrf_token %}
-    <br>
+    {% comment %} <br>
     <input type="text" name="username" placeholder="Username">
     <br>
     <input type="password" name="password" placeholder="password">  <br><br>
+    {% endcomment %}
+
+    {{lf}}
+
     <br>
-    <input type="submit" value="save"> <br> <br> 
+    <input type="submit" value="save"> <br> <br>  
+
+     
+
 
     <br>
 

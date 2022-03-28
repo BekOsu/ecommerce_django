@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from.models import Login
+from .models import Login
+from .forms import Loginform
 
  
 def about(request):
@@ -9,4 +10,4 @@ def about(request):
     data.save() 
     
     
-    return render(request, 'about/about.html')
+    return render(request, 'about/about.html', {'lf':Loginform})
