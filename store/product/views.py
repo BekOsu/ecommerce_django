@@ -10,9 +10,4 @@ def index(request):
 def cart(request): 
     return render(request, 'product/cart.html')
 
-# def product(request): 
-#     return render(request, 'products/productt.html')
-
-# def products(request): 
-#     return render(request, 'products/products.html', {'name':'ahmed'})
 

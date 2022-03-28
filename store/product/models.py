@@ -29,7 +29,7 @@ class Product(models.Model):
        
        
 class Test(models.Model):  
-     date = models.Field()
+     date = models.DateField()
      time = models.TimeField(null=True)
      create = models.DateTimeField(default=datetime.now)
      

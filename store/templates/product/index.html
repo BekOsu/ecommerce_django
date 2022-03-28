@@ -8,7 +8,14 @@
 
 {% for x in pro %}
 
-<h2>   {{x}}  <h2> 
+
+
+<h2>   {{x.name}}  <h2> 
+  {{x.price}}  <br> 
+      {{x.code}}   
+           {{x.content}}  <br> 
+               {{x.category}}  
+
     <p>   
 
     <img src="{{x.image.url}}" alt="">

@@ -23,4 +23,5 @@ from store.settings import MEDIA_URL
 urlpatterns = [
     path('', include('product.urls')),
     path('admin/', admin.site.urls),
+    path('', include('about.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
