@@ -4,10 +4,17 @@ from .forms import Loginform
 
  
 def about(request):
-    username = request.POST.get('username')
-    password = request.POST.get('password')
-    data = Login (username=username, password=password)
-    data.save() 
+    
+   dataform = Loginform(request.POST)
+   dataform.save()
+    
+   return render(request, 'about/about.html', {'lf':Loginform})
+
+
+    # username = request.POST.get('username')
+    # password = request.POST.get('password')
+    # data = Login (username=username, password=password)
+    # data.save() 
     
     
-    return render(request, 'about/about.html', {'lf':Loginform})
+    
